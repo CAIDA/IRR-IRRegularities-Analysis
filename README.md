@@ -10,3 +10,4 @@ You will need to download the following datasets.
 - For [IRR_Inconsistency.ipynb](https://github.com/CAIDA/IRR-IRRegularities-Analysis/blob/main/IRR_Inconsistency.ipynb): Download the [CAIDA AS Organizations dataset](https://www.caida.org/catalog/datasets/as-organizations/) and the [CAIDA AS Relationship dataset](https://www.caida.org/catalog/datasets/as-relationships/)
 - For [BGP_Overlap.ipynb]: Download the [CAIDA Routeviews Prefix2AS dataset](https://www.caida.org/catalog/datasets/routeviews-prefix2as/)
 
+Sample proceessed datasets for 2024-01-01 are provided in the `data/` directory. Please refer to the links above for the latest datasets.
