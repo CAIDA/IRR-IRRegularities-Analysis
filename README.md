@@ -2,6 +2,21 @@
 
 This repo contains the analysis code for the IMC2023 paper [IRRegularities in the Internet Routing Registry](https://www.caida.org/catalog/papers/2023_irregularities_in_internet_routing_registry/irregularities_in_internet_routing_registry.pdf).
 
+## Results from paper
+The file [radb_suspicious_6373.csv.gz](https://github.com/CAIDA/IRR-IRRegularities-Analysis/blob/main/radb_suspicious_6373.csv.gz) contains the 6,373 potentially suspicious records in RADB between November 2021 and May 2023.
+The columns in the file are explained below:
+- first column with no name: index
+- prefix: BGP prefixes
+- asn: BGP origin ASNs
+- duration: number of seconds the prefix origin is observed in BGP
+- route: prefix of the route object, same as prefix column
+- origin: origin AS of the route object, same as asn column
+- mnt-by: maintainer of the route object in RADB
+- lifetime: number of days the route object is observed in RADB
+- end_date: last-day the route object is observed in RADB. 2023-05-05 is the last day the RADB snapshot was retrieved.
+- rpki_radb: RPKI consistency status of the RADB route object.
+- radb_roas: corresponding ROAs of the RADB route objects, calculated using the ROV algorithm (RFC6811).
+
 ## Data requirements
 
 You will need to download the following datasets.
